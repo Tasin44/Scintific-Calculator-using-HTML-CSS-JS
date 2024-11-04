@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+   
+    <div id="calculator">
+
+        <input id="display" readonly><!-- It'll create a display where we cann't write anything onlycan see result,here using readonly attribute -->
+        <div id="keys">
+            <button onclick="appendToDisplay('(')" class="operatorbtn">(</button>
+            <button onclick="appendToDisplay(')')" class="operatorbtn">)</button>
+            <button onclick="appendToDisplay('%')" class="operatorbtn">%</button>
+            <button onclick="appendToDisplay('√ ')" class="operatorbtn">√</button>
+            <button onclick="appendToDisplay('sin')" class="operatorbtn">sin</button>
+            <button onclick="appendToDisplay('ln')" class="operatorbtn">ln</button>
+            <button onclick="appendToDisplay('π')" class="operatorbtn">π</button>
+            <button onclick="appendToDisplay('cos')" class="operatorbtn">cos</button>
+            <button onclick="appendToDisplay('log')" class="operatorbtn">log</button>
+            <button onclick="appendToDisplay('e')" class="operatorbtn">e</button>
+            <button onclick="appendToDisplay('tan')" class="operatorbtn">tan</button>
+            <button onclick="appendToDisplay('+')" class="operatorbtn">+</button>
+            <button onclick="appendToDisplay('-')"class="operatorbtn">-</button>
+            <button onclick="appendToDisplay('×')"class="operatorbtn">×</button>
+            <button onclick="appendToDisplay('÷')"class="operatorbtn">÷</button>
+            <button onclick="squareNumber()"class="operatorbtn">a²</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="deleteLastChar()"class="operatorbtn">AC</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="clearDisplay()" class="operatorbtn">C</button>
+            
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('^')" class="operatorbtn">x<sup>y</sup></button>
+            <button onclick="calculate()">=</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            
+        </div>
+        
+    </div>
+
+    <button id="mode">Theme</button>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

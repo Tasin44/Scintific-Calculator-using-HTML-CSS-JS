@@ -1,0 +1,89 @@
+
+body{
+    margin-top: 70px;
+    display:flex;
+    justify-content: center; /*for horizontal alignment */
+    align-items: center; /*for vertical alignment */
+    height: 100%;
+    width: 100%;
+    background-color: rgb(67, 166, 206);
+} 
+
+#calculator{
+
+    font-family: Arial, sans-serif;
+    background-color: darkolivegreen;
+    border-radius: 10px; 
+    height: 780px;
+    width: 450px;
+    max-width: 900px;
+    overflow: hidden;/*This is for our display , if we've very long equation; */
+}
+
+#display{
+    height: 60px;
+    width: 89.7%;
+    padding: 15px;
+    font-size: 1.8rem;
+    color: white;
+    text-align: left;
+    border: .5rem solid darkslategrey;
+    background-color: rgb(19, 19, 27); 
+    /* border-radius: 1rem; */
+    /* border:10px;
+    border-color: black; */
+
+}
+
+
+
+#keys{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);/* 4 columns, 1fr(fractional unit) means each col will take suitable amound of space; */
+    gap: 10px;
+    padding: 25px;
+}
+button{
+    width: 70px;
+    height: 70px;
+    border-radius: 5rem;
+    border: none;
+    background-color: rgb(27, 8, 8);
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{ /* hover sudo class */
+    background-color: rgb(124, 65, 23);
+}
+
+button:active{/* This option will create light when we pree a button  */
+    background-color: rgb(196, 3, 3);
+}
+.operatorbtn{
+    background-color: rgb(0, 0, 0);
+}
+
+.operatorbtn:hover{
+    background-color: rgb(4, 56, 17);
+}
+
+#mode{
+    height: 70px;
+    width: 70px;
+    font-size: 1rem;
+    color: black;
+    background-color:darkolivegreen ;
+    justify-content: left;
+    align-items: left;
+    margin-left: 100px;
+}
+
+#mode:hover{
+    background-color: rgb(23, 61, 23);
+}
+
+#mode:active{
+    background-color: red;
+}
